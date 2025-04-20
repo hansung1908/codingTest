@@ -148,3 +148,37 @@
 | `issubset(set)`             | 부분집합 여부 반환                    | {1,2}.issubset({1,2,3}) → True        |
 | `issuperset(set)`           | 상위집합 여부 반환                    | {1,2,3}.issuperset({1,2}) → True      |
 | `isdisjoint(set)`           | 공통 요소 없는지 여부 반환               | {1,2}.isdisjoint({3,4}) → True        |
+
+### Python math 모듈 주요 메소드/상수 표
+
+| 메소드/상수              | 설명                                                     | 예시 코드                          | 결과                |
+|--------------------------|----------------------------------------------------------|-------------------------------------|---------------------|
+| math.ceil(x)             | x보다 크거나 같은 최소 정수(올림) 반환                   | math.ceil(2.3)                      | 3                   |
+| math.floor(x)            | x보다 작거나 같은 최대 정수(내림) 반환                   | math.floor(2.7)                     | 2                   |
+| math.trunc(x)            | x의 소수점 이하를 버리고 정수 부분만 반환                | math.trunc(-2.7)                    | -2                  |
+| math.fabs(x)             | x의 절댓값을 float로 반환                                | math.fabs(-3)                       | 3.0                 |
+| math.factorial(x)        | x의 팩토리얼 반환 (x!)                                   | math.factorial(5)                   | 120                 |
+| math.gcd(a, b)           | a와 b의 최대공약수(GCD) 반환                             | math.gcd(12, 18)                    | 6                   |
+| math.sqrt(x)             | x의 제곱근 반환                                          | math.sqrt(9)                        | 3.0                 |
+| math.pow(x, y)           | x의 y제곱 반환 (float)                                   | math.pow(2, 3)                      | 8.0                 |
+| math.exp(x)              | e의 x제곱 반환                                           | math.exp(1)                         | 2.718281828...      |
+| math.log(x[, base])      | x의 로그(base 지정 가능, 기본은 자연로그)                | math.log(8, 2)                      | 3.0                 |
+| math.log10(x)            | x의 상용로그(밑 10) 반환                                 | math.log10(100)                     | 2.0                 |
+| math.log2(x)             | x의 밑 2 로그 반환                                       | math.log2(16)                       | 4.0                 |
+| math.sin(x)              | x(라디안)의 사인 반환                                    | math.sin(math.pi/2)                 | 1.0                 |
+| math.cos(x)              | x(라디안)의 코사인 반환                                  | math.cos(0)                         | 1.0                 |
+| math.tan(x)              | x(라디안)의 탄젠트 반환                                  | math.tan(math.pi/4)                 | 1.0                 |
+| math.degrees(x)          | 라디안을 도(degree)로 변환                               | math.degrees(math.pi)               | 180.0               |
+| math.radians(x)          | 도(degree)를 라디안으로 변환                             | math.radians(180)                   | 3.141592653...      |
+| math.hypot(x, y)         | sqrt(x*x + y*y) 반환 (피타고라스 정리)                   | math.hypot(3, 4)                    | 5.0                 |
+| math.isfinite(x)         | x가 유한수면 True 반환                                   | math.isfinite(1.0)                  | True                |
+| math.isinf(x)            | x가 무한대면 True 반환                                   | math.isinf(math.inf)                | True                |
+| math.isnan(x)            | x가 NaN(Not a Number)이면 True 반환                      | math.isnan(math.nan)                | True                |
+| math.comb(n, k)          | n개 중 k개를 순서 없이 뽑는 조합의 수 반환               | math.comb(5, 2)                     | 10                  |
+| math.perm(n, k)          | n개 중 k개를 순서 있게 뽑는 순열의 수 반환               | math.perm(5, 2)                     | 20                  |
+| math.fsum(iterable)      | iterable의 모든 값을 더해 정확한 부동소수점 합 반환      | math.fsum([0.1, 0.2, 0.3])          | 0.6                 |
+| math.pi                  | 원주율 π (3.141592...)                                   | math.pi                             | 3.141592653...      |
+| math.e                   | 자연상수 e (2.718281...)                                 | math.e                              | 2.718281828...      |
+| math.tau                 | 2π (6.283185...)                                         | math.tau                            | 6.283185307...      |
+| math.inf                 | 양의 무한대                                              | math.inf                            | inf                 |
+| math.nan                 | Not a Number (숫자가 아님)                               | math.nan                            | nan                 |
